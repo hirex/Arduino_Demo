@@ -1,12 +1,10 @@
-#include <ArduinoJson.h>
-
 #include <ESP8266WiFi.h>
 #include <ArduinoJson.h>
 
 const char* ssid     = "free";              // XXXXXX -- 使用时请修改为当前你的 wifi ssid
 const char* password = "123456789";         // XXXXXX -- 使用时请修改为当前你的 wifi 密码
 const char* host = "api.seniverse.com";
-const char* APIKEY = "wcmquevztdy1jpca";    //API KEY
+const char* APIKEY = "wcmquevztdy1jpca";    //API KEY 感谢Arduino.cn社区博哥提供
 const char* city = "shenzhen";
 const char* language = "en";                //zh-Hans 简体中文  会显示乱码
 
