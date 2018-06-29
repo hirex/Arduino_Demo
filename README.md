@@ -18,3 +18,11 @@
   [weather_station](./weather_station) 演示了一个简易WIFI气象站,从 [心知天气](https://www.seniverse.com/doc) 提供的API获取气象数据，使用到WIFI模块和 [ArduinoJson](https://github.com/bblanchon/ArduinoJson) 库，注意需要使用5.13.2版本，否则编译会不通过。获取的天气数据是JSON格式，程序对JSON数据进行解析，解析后通过串口打印天气信息。
 
   参考链接：[《博哥ESP8266系列2》- ESP8266 获取天气情况](https://www.arduino.cn/thread-49411-1-2.html)
+
+  ### oled
+  [test_ssd1331](./oled/test_ssd1331) 演示了使用SSD1331驱动芯片的0.96" OLED显示屏，型号为UG-9664HDDAG01。采用IO模拟SPI，BS1、BS2接GND，VDD和VDDIO由devkit模块3.3V供电，VCC由外部12V电源供电，搭的demo没有用升压电路。
+  使用的SSD1331驱动库修改自[Adafruit-SSD1331-OLED-Driver-Library-for-Arduino](https://github.com/adafruit/Adafruit-SSD1331-OLED-Driver-Library-for-Arduino)和图形库[Adafruit-GFX-Library](https://github.com/adafruit/Adafruit-GFX-Library)。
+  显示效果如下：
+  ![demo1](oled/test_ssd1331/docs/demo1.jpg)
+  ![demo2](oled/test_ssd1331/docs/demo2.jpg)
+  ![demo3](oled/test_ssd1331/docs/demo3.jpg)
